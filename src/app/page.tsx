@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import BlogSection from "@/components/BlogSection";
@@ -10,7 +11,19 @@ export default function Home() {
     <div className="flex flex-col w-full">
       {/* Hero Section */}
       <section id="home" className="flex flex-col items-center justify-center pt-24 pb-12 px-6 sm:px-8 md:pt-32 md:pb-16 lg:px-12 w-full min-h-[85vh]">
-        <div className="max-w-3xl text-center space-y-6 md:space-y-8">
+        <div className="max-w-3xl text-center space-y-6 md:space-y-8 flex flex-col items-center">
+          
+          {/* Profile Avatar */}
+          <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mb-2 md:mb-4 rounded-full overflow-hidden shadow-2xl ring-4 ring-background outline outline-2 outline-border/50">
+            <Image 
+              src="/profile.jpg" 
+              alt="Daniel Mutinda" 
+              fill 
+              className="object-cover transform hover:scale-105 transition-transform duration-500"
+              priority
+            />
+          </div>
+
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
             Hi, I'm Daniel Mutinda
           </h1>

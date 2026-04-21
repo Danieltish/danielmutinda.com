@@ -54,11 +54,11 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <nav className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-md text-zinc-100">
         <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between px-4 md:px-8">
           <div className="flex items-center gap-6 md:gap-10 w-full justify-between md:justify-start">
             <Link href="/" className="flex items-center space-x-2 z-50">
-              <span className="font-bold inline-block">danielmutinda.com</span>
+              <span className="font-bold inline-block text-white">danielmutinda.com</span>
             </Link>
 
             {/* Desktop Nav */}
@@ -69,7 +69,7 @@ export default function Navbar() {
                   <Link 
                     key={link.name} 
                     href={link.path} 
-                    className={`transition-all hover:text-foreground/90 text-sm ${isActive ? 'text-foreground font-extrabold' : 'text-foreground/60 font-medium'}`}
+                    className={`transition-all text-sm ${isActive ? 'text-white font-extrabold' : 'text-zinc-400 font-medium hover:text-zinc-200'}`}
                   >
                     {link.name}
                   </Link>
@@ -84,9 +84,9 @@ export default function Navbar() {
               aria-label="Toggle Menu"
             >
               <div className="w-5 h-5 flex flex-col justify-around">
-                <span className={`block w-full h-[2px] bg-foreground transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
-                <span className={`block w-full h-[2px] bg-foreground transition-opacity duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`} />
-                <span className={`block w-full h-[2px] bg-foreground transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
+                <span className={`block w-full h-[2px] bg-zinc-100 transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
+                <span className={`block w-full h-[2px] bg-zinc-100 transition-opacity duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`} />
+                <span className={`block w-full h-[2px] bg-zinc-100 transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
               </div>
             </button>
           </div>
@@ -95,7 +95,7 @@ export default function Navbar() {
 
       {/* Mobile Nav Overlay */}
       {isOpen && (
-        <div className="md:hidden fixed inset-x-0 bottom-0 top-14 z-[45] bg-background shadow-xl border-t border-border/40">
+        <div className="md:hidden fixed inset-x-0 bottom-0 top-14 z-[45] bg-zinc-950 text-zinc-100 shadow-2xl border-t border-zinc-800">
           <div className="flex flex-col px-6 py-8 gap-8 h-full overflow-y-auto w-full pb-24">
             {navLinks.map((link) => {
               const isActive = activeSection === link.path.substring(1);
@@ -103,7 +103,7 @@ export default function Navbar() {
                 <Link 
                   key={link.name} 
                   href={link.path} 
-                  className={`text-xl sm:text-2xl tracking-wide w-full block hover:text-primary transition-colors py-2 ${isActive ? 'text-foreground font-extrabold' : 'text-foreground/70 font-bold'}`}
+                  className={`text-xl sm:text-2xl tracking-wide w-full block transition-colors py-2 ${isActive ? 'text-white font-extrabold' : 'text-zinc-400 font-bold hover:text-zinc-200'}`}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}

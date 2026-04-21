@@ -5,6 +5,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import BlogSection from "@/components/BlogSection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -27,21 +28,22 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
             Hi, I'm Daniel Mutinda
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto px-2">
-            Software Engineer & Creative Developer building digital experiences that matter.
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            A full-stack software engineer crafting robust digital experiences. 
+            I build fast, beautiful, and scalable applications.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 md:pt-4 w-full px-4 sm:px-0">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center items-center w-full">
             <Link 
               href="#projects" 
-              className="w-full sm:w-auto inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors bg-foreground text-background hover:bg-foreground/90 h-12 md:h-14 px-8 py-2 md:text-base border border-transparent shadow-sm"
+              className="inline-flex h-12 items-center justify-center rounded-lg bg-foreground px-8 py-2 text-sm font-bold text-background shadow transition-colors hover:bg-foreground/90 w-full sm:w-auto hover:scale-105 duration-300"
             >
-              View Projects
+              View My Work
             </Link>
             <Link 
               href="#contact" 
-              className="w-full sm:w-auto inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 md:h-14 px-8 py-2 md:text-base shadow-sm"
+              className="inline-flex h-12 items-center justify-center rounded-lg border border-input bg-background px-8 py-2 text-sm font-bold shadow-sm transition-colors hover:bg-muted hover:text-foreground w-full sm:w-auto hover:scale-105 duration-300"
             >
-              Get In Touch
+              Contact Me
             </Link>
           </div>
         </div>
@@ -54,8 +56,8 @@ export default function Home() {
       <FAQSection />
       <ContactSection />
       
-      {/* Footer padding */}
-      <div className="pb-24"></div>
+      {/* Global Footer */}
+      <Footer />
     </div>
   );
 }

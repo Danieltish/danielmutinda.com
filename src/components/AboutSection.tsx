@@ -13,13 +13,13 @@ export default function AboutSection() {
         {/* Left Side: Text Context */}
         <div className="prose dark:prose-invert max-w-none text-base sm:text-lg text-center md:text-left order-2 md:order-1">
           <p className="leading-7 sm:leading-8 text-muted-foreground font-medium">
-            Hello! I'm Daniel Mutinda. Welcome to my personal slice of the internet where logic meets creativity.
+            Hello! I'm Daniel Mutinda. Welcome to my personal slice of the internet where logic meets creativity and complex problems find elegant solutions.
           </p>
           <p className="leading-7 sm:leading-8 mt-6 text-muted-foreground">
-            I specialize in crafting high-performance, full-stack applications. My sweet spot lies at the intersection of robust backend infrastructure and breathtaking frontend aesthetics. I don't just write code; I strive to engineer experiences that people actually love using.
+            I specialize in crafting high-performance, full-stack applications—ranging from advanced telecommunications to agricultural tech. My focus right now spans a diverse portfolio of platforms I've built from the ground up and currently maintain. This includes <strong>CallHub360</strong> (a robust VoIP microservice architecture), <strong>FarmMall</strong> (digital farming with Next.js and Django), and community empowerment hubs like <strong>Mseewa ServiceNow</strong> and <strong>Kahustle</strong>. I also deliver custom networking solutions via <strong>Dacafovy</strong>.
           </p>
           <p className="leading-7 sm:leading-8 mt-6 text-muted-foreground">
-            Whether it's deploying scalable microservices, spinning up pixel-perfect UI, or diving deep into database optimization, I am constantly learning and refining my craft to build the very best solutions possible.
+            Whether it's deploying scalable backend infrastructures, spinning up pixel-perfect UIs, or managing secure databases, my goal is always the same: to engineer seamless, highly-impactful experiences that people actually love using.
           </p>
         </div>
 

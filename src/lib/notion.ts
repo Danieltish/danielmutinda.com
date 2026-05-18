@@ -19,14 +19,14 @@ interface BlogPost {
 }
 
 export const getPublishedBlogs = async (): Promise<BlogPost[]> => {
-  const databaseId = process.env.NOTION_DATABASE_ID;
+  const dataSourceId = process.env.NOTION_DATABASE_ID;
   
-  if (!databaseId) {
+  if (!dataSourceId) {
     throw new Error("Missing NOTION_DATABASE_ID in environment variables");
   }
 
-  const response = await notion.databases.query({
-    database_id: databaseId,
+  const response = await notion.dataSources.query({
+    data_source_id: dataSourceId,
     filter: {
       property: "Published",
       checkbox: {
@@ -54,15 +54,15 @@ export const getPublishedBlogs = async (): Promise<BlogPost[]> => {
 };
 
 export const getSingleBlogPost = async (slug: string) => {
-  const databaseId = process.env.NOTION_DATABASE_ID;
+  const dataSourceId = process.env.NOTION_DATABASE_ID;
   
-  if (!databaseId) {
+  if (!dataSourceId) {
     throw new Error("Missing NOTION_DATABASE_ID in environment variables");
   }
 
   // 1. Fetch exactly the one record matching the slug
-  const response = await notion.databases.query({
-    database_id: databaseId,
+  const response = await notion.dataSources.query({
+    data_source_id: dataSourceId,
     filter: {
       property: "Slug",
       formula: {

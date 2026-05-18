@@ -27,7 +27,7 @@ export default function ContactSection() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm font-semibold">Name</label>
-              <input type="text" id="name" name="name" required className="flex h-12 w-full rounded-lg border border-input bg-background/50 px-4 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors" placeholder="John Doe" />
+              <input type="text" id="name" name="name" required className="flex h-12 w-full rounded-lg border border-input bg-background/50 px-4 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors" placeholder="First and second name" />
             </div>
             <div className="space-y-2">
               <label htmlFor="email" className="text-sm font-semibold">Email</label>

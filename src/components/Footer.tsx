@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer className="w-full border-t border-zinc-800 bg-zinc-950 text-zinc-100 pt-16 pb-12 mt-12">
       <div className="container mx-auto px-6 flex flex-col items-center">
-        <h3 className="text-xl font-bold mb-8 text-white">Daniel Mutinda</h3>
+        <h3 className="text-xl font-bold mb-8 text-white">BuildbyMutinda</h3>
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-10">
           {socialLinks.map((link) => (
             <a
@@ -35,7 +35,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="text-center text-sm text-zinc-500 font-medium">
-          © {currentYear} Daniel Mutinda. All rights reserved.
+          © {currentYear} BuildbyMutinda. All rights reserved.
         </p>
       </div>
     </footer>

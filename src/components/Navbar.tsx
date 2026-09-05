@@ -58,7 +58,7 @@ export default function Navbar() {
         <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between px-4 md:px-8">
           <div className="flex items-center gap-6 md:gap-10 w-full justify-between md:justify-start">
             <Link href="/" className="flex items-center space-x-2 z-50">
-              <span className="font-bold inline-block text-white">danielmutinda.com</span>
+              <span className="font-bold inline-block text-white">buildbymutinda</span>
             </Link>
 
             {/* Desktop Nav */}

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daniel Mutinda",
-  description: "Daniel Mutinda's personal website",
+  title: "BuildbyMutinda",
+  description: "BuildbyMutinda's portfolio and developer blog",
 };
 
 export default function RootLayout({

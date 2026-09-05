@@ -18,6 +18,19 @@ const projects = [
     link: "https://dev.callhub360.com/"
   },
   {
+    name: "SabbyAI",
+    description: (
+      <>
+        An AI-powered sales platform that helps sellers turn their contacts into customers. 
+        It tracks every prospect interaction, remembers client facts and photos, and 
+        automatically follows up with the right message at the right time.
+      </>
+    ),
+    techStack: ["React 18 + TypeScript", "Vite 5 (SWC)", "Tailwind CSS + shadcn/ui", "Supabase"],
+    logo: "/sabbyai-logo.svg",
+    link: "https://sabbyai.vercel.app/"
+  },
+  {
     name: "FarmMall",
     description: (
       <>
